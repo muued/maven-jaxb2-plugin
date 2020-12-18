@@ -16,6 +16,11 @@
 			<artifactId>jaxb-runtime</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>${jaxb30.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.jvnet.jaxb2.maven2</groupId>
 			<artifactId>maven-jaxb2-plugin-tests-po</artifactId>
 			<version>${project.version}</version>

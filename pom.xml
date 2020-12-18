@@ -37,6 +37,7 @@
 		<module>plugin-2.1</module>
 		<module>plugin-2.2</module>
 		<module>plugin-2.3</module>
+		<module>plugin-3.0</module>
 		<module>plugin</module>
 		<module>testing</module>
 	</modules>
@@ -46,7 +47,8 @@
 		<jaxb20.version>2.0.5</jaxb20.version>
 		<jaxb21.version>2.1.13</jaxb21.version>
 		<jaxb22.version>2.2.11</jaxb22.version>
-		<jaxb23.version>2.3.1</jaxb23.version>
+		<jaxb23.version>2.3.3</jaxb23.version>
+		<jaxb30.version>3.0.0</jaxb30.version>
 		<jaxb-api.version>2.3.1</jaxb-api.version>
 		<jaxb.version>${jaxb23.version}</jaxb.version>
 		<stax-ex.version>1.7.8</stax-ex.version>
@@ -288,6 +290,11 @@
 			<dependency>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb23-plugin</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb30-plugin</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>

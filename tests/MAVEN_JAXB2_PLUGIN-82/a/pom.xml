@@ -10,6 +10,13 @@
 	<artifactId>maven-jaxb2-plugin-tests-MAVEN_JAXB2_PLUGIN-82-a</artifactId>
 	<packaging>jar</packaging>
 	<name>Maven JAXB 2.x Plugin Tests [MAVEN_JAXB2_PLUGIN-82:a]</name>
+	<dependencies>
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>${jaxb23.version}</version>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
