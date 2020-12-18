@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 import org.apache.maven.plugin.Mojo;
 import org.apache.maven.project.MavenProject;
 import org.jvnet.jaxb2.maven2.AbstractXJC2Mojo;
-import org.jvnet.mjiip.v_2.XJC2Mojo;
+import org.jvnet.mjiip.v_3_0.XJC30Mojo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,11 +19,11 @@ import org.slf4j.LoggerFactory;
  * @author Aleksei Valikov
  */
 
-public class RunXJC2Mojo extends TestCase {
+public class RunXJC3Mojo extends TestCase {
 	/**
 	 * Logger.
 	 */
-	protected Logger log = LoggerFactory.getLogger(RunXJC2Mojo.class);
+	protected Logger log = LoggerFactory.getLogger(RunXJC3Mojo.class);
 
 	public void testExecute() throws Exception {
 		final Mojo mojo = initMojo();
@@ -70,7 +70,7 @@ public class RunXJC2Mojo extends TestCase {
 	}
 
 	protected AbstractXJC2Mojo createMojo() {
-		return new XJC2Mojo();
+		return new XJC30Mojo();
 	}
 
 	protected void configureMojo(final AbstractXJC2Mojo mojo) {
