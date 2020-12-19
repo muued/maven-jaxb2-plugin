@@ -33,13 +33,16 @@
 	</developers>
 	<modules>
 		<module>plugin-core</module>
+		<module>plugin-3-core</module>
 		<module>plugin-2.0</module>
 		<module>plugin-2.1</module>
 		<module>plugin-2.2</module>
 		<module>plugin-2.3</module>
 		<module>plugin-3.0</module>
 		<module>plugin</module>
+		<module>plugin-3</module>
 		<module>testing</module>
+		<module>testing-3</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -269,7 +272,17 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb3-plugin-core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb3-plugin</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -300,6 +313,11 @@
 			<dependency>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin-testing</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb3-plugin-testing</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- Maven plugin and api classes -->

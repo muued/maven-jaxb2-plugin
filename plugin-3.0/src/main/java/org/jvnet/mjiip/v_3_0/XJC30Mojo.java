@@ -18,6 +18,7 @@ import com.sun.tools.xjc.ModelLoader;
 import com.sun.tools.xjc.Options;
 import com.sun.tools.xjc.model.Model;
 import com.sun.tools.xjc.outline.Outline;
+import org.jvnet.jaxb2.maven2.RawXJC3Mojo;
 
 /**
  * JAXB 3.x Mojo.

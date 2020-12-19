@@ -17,13 +17,8 @@
 			<version>${jaxb30.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
-			<artifactId>jaxb-core</artifactId>
-			<version>${jaxb30.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
-			<artifactId>jaxb-jxc</artifactId>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
 			<version>${jaxb30.version}</version>
 		</dependency>
 		<dependency>

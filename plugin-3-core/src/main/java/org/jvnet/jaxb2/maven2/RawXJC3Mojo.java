@@ -12,7 +12,7 @@
  * limitations under the License. 
  */
 
-package org.jvnet.mjiip.v_3_0;
+package org.jvnet.jaxb2.maven2;
 
 import com.sun.org.apache.xml.internal.resolver.CatalogManager;
 import com.sun.org.apache.xml.internal.resolver.tools.CatalogResolver;
@@ -35,10 +35,6 @@ import org.apache.maven.settings.Proxy;
 import org.apache.maven.settings.Settings;
 import org.codehaus.plexus.util.FileUtils;
 import org.codehaus.plexus.util.IOUtil;
-import org.jvnet.jaxb2.maven2.AbstractXJC2Mojo;
-import org.jvnet.jaxb2.maven2.OptionsConfiguration;
-import org.jvnet.jaxb2.maven2.ParentFirstClassLoader;
-import org.jvnet.jaxb2.maven2.ResourceEntry;
 import org.jvnet.jaxb2.maven2.net.CompositeURILastModifiedResolver;
 import org.jvnet.jaxb2.maven2.net.FileURILastModifiedResolver;
 import org.jvnet.jaxb2.maven2.net.URILastModifiedResolver;
@@ -78,7 +74,7 @@ import java.util.jar.JarFile;
  * 
  * @author Aleksei Valikov (valikov@gmx.net)
  */
-public abstract class RawXJC3Mojo<O> extends AbstractXJC2Mojo<O> {
+public abstract class RawXJC3Mojo<O> extends AbstractXJC3Mojo<O> {
 
 	private static final String JAXB_NSURI = "https://jakarta.ee/xml/ns/jaxb";
 
