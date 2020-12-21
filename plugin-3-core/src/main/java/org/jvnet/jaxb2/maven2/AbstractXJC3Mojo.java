@@ -1109,7 +1109,7 @@ public abstract class AbstractXJC3Mojo<O> extends AbstractMojo implements
 		this.project = project;
 	}
 
-	private static final String XML_SCHEMA_CLASS_QNAME = "javax.xml.bind.annotation."
+	private static final String XML_SCHEMA_CLASS_QNAME = "jakarta.xml.bind.annotation."
 			+ XML_SCHEMA_CLASS_NAME;
 
 	public ArtifactResolver getArtifactResolver() {
@@ -1132,7 +1132,7 @@ public abstract class AbstractXJC3Mojo<O> extends AbstractMojo implements
 		this.artifactMetadataSource = artifactMetadataSource;
 	}
 
-	private static final String XML_SCHEMA_RESOURCE_QNAME = "/javax/xml/bind/annotation/"
+	private static final String XML_SCHEMA_RESOURCE_QNAME = "/jakarta/xml/bind/annotation/"
 			+ XML_SCHEMA_RESOURCE_NAME;
 
 	public ArtifactFactory getArtifactFactory() {
@@ -1153,7 +1153,7 @@ public abstract class AbstractXJC3Mojo<O> extends AbstractMojo implements
 		this.localRepository = localRepository;
 	}
 
-	private static final String XML_ELEMENT_REF_CLASS_QNAME = "javax.xml.bind.annotation."
+	private static final String XML_ELEMENT_REF_CLASS_QNAME = "jakarta.xml.bind.annotation."
 			+ XML_ELEMENT_REF_CLASS_NAME;
 
 	public MavenProjectBuilder getMavenProjectBuilder() {
